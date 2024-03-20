@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio Version 17
+
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SideWaveBluff - Standalone Plugin", "SideWaveBluff_StandalonePlugin.vcxproj", "{443165AD-9A89-98C6-7571-7A42C28B85B4}"
+	ProjectSection(ProjectDependencies) = postProject
+		{22A76638-0E5D-032F-EB7C-3598546FA115} = {22A76638-0E5D-032F-EB7C-3598546FA115}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SideWaveBluff - VST3", "SideWaveBluff_VST3.vcxproj", "{9A601052-54B0-83AA-0F56-D29375C3CF07}"
+	ProjectSection(ProjectDependencies) = postProject
+		{22A76638-0E5D-032F-EB7C-3598546FA115} = {22A76638-0E5D-032F-EB7C-3598546FA115}
+		{5029B732-DE52-D278-C032-0B562635DA05} = {5029B732-DE52-D278-C032-0B562635DA05}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SideWaveBluff - Shared Code", "SideWaveBluff_SharedCode.vcxproj", "{22A76638-0E5D-032F-EB7C-3598546FA115}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SideWaveBluff - VST3 Manifest Helper", "SideWaveBluff_VST3ManifestHelper.vcxproj", "{5029B732-DE52-D278-C032-0B562635DA05}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9A601052-54B0-83AA-0F56-D29375C3CF07}.Debug|x64.ActiveCfg = Debug|x64
+		{9A601052-54B0-83AA-0F56-D29375C3CF07}.Debug|x64.Build.0 = Debug|x64
+		{9A601052-54B0-83AA-0F56-D29375C3CF07}.Release|x64.ActiveCfg = Release|x64
+		{9A601052-54B0-83AA-0F56-D29375C3CF07}.Release|x64.Build.0 = Release|x64
+		{443165AD-9A89-98C6-7571-7A42C28B85B4}.Debug|x64.ActiveCfg = Debug|x64
+		{443165AD-9A89-98C6-7571-7A42C28B85B4}.Debug|x64.Build.0 = Debug|x64
+		{443165AD-9A89-98C6-7571-7A42C28B85B4}.Release|x64.ActiveCfg = Release|x64
+		{443165AD-9A89-98C6-7571-7A42C28B85B4}.Release|x64.Build.0 = Release|x64
+		{22A76638-0E5D-032F-EB7C-3598546FA115}.Debug|x64.ActiveCfg = Debug|x64
+		{22A76638-0E5D-032F-EB7C-3598546FA115}.Debug|x64.Build.0 = Debug|x64
+		{22A76638-0E5D-032F-EB7C-3598546FA115}.Release|x64.ActiveCfg = Release|x64
+		{22A76638-0E5D-032F-EB7C-3598546FA115}.Release|x64.Build.0 = Release|x64
+		{5029B732-DE52-D278-C032-0B562635DA05}.Debug|x64.ActiveCfg = Debug|x64
+		{5029B732-DE52-D278-C032-0B562635DA05}.Debug|x64.Build.0 = Debug|x64
+		{5029B732-DE52-D278-C032-0B562635DA05}.Release|x64.ActiveCfg = Release|x64
+		{5029B732-DE52-D278-C032-0B562635DA05}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
