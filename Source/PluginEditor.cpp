@@ -15,7 +15,7 @@ SideWaveBluffAudioProcessorEditor::SideWaveBluffAudioProcessorEditor (SideWaveBl
 {
     // Make sure that before the constructor has finished, you've set the
     // editor's size to whatever you need it to be.
-    setSize (555, 255);
+    setSize (705, 305);
 }
 
 SideWaveBluffAudioProcessorEditor::~SideWaveBluffAudioProcessorEditor()
@@ -26,11 +26,12 @@ SideWaveBluffAudioProcessorEditor::~SideWaveBluffAudioProcessorEditor()
 void SideWaveBluffAudioProcessorEditor::paint (juce::Graphics& g)
 {
     // (Our component is opaque, so we must completely fill the background with a solid colour)
-    g.fillAll (getLookAndFeel().findColour (juce::ResizableWindow::backgroundColourId));
+    g.fillAll(juce::Colour::fromRGB(0x7f, 0x69, 0xa5));
+
 
     g.setColour (juce::Colours::white);
     g.setFont (15.0f);
-    g.drawFittedText ("Hello World!", getLocalBounds(), juce::Justification::centred, 1);
+    g.drawFittedText ("SideWaveBluffAudioProcessor V!", getLocalBounds(), juce::Justification::topLeft, 1);
 }
 
 void SideWaveBluffAudioProcessorEditor::resized()
